@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="header">
+    <figure class="header__logo">
+      <img src="./images/logo.webp" alt="Logo">
+      <img src="./images/platzi.webp" alt="Platzi">
+    </figure>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Cursos</a>
+        </li>
+        <li>
+          <a href="#">Instructores</a>
+        </li>
+        <li>
+          <a href="#">Blog</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <aside class="routes">
+      <figure class="routes__images">
+        <img src="./images/route_1.png" alt="Route 1">
+        <img src="./images/route_2.png" alt="Route 1">
+        <img src="./images/route_3.png" alt="Route 1">
+        <img src="./images/route_4.png" alt="Route 1">
+      </figure>
+    </aside>
+    <section class="content">
+      <p class="description">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem debitis nulla reprehenderit culpa architecto fuga deserunt quos repellat officia ut magni quibusdam earum, aliquam, vitae dicta blanditiis excepturi! Neque, dolorum.
+      </p>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>About us</p>
+  </footer>
+</body>
+</html>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  background-color: peru;
+}
+.header__logo, .nav, .nav__list li {
+  display: inline-block;
+  margin: 5px;
+}
+.nav {
+  position: absolute;
+  right: 0;
+}
+.nav__list {
+  list-style: none;
+}
+.nav__list li a {
+  text-decoration: none;
+  color: white;
+}
+.main {
+  height: 400px;
+  background-color: seagreen;
+}
+.routes {
+  display: inline-block;
+  height: 100%;
+  padding: 10px;
+  background-color: royalblue;
+}
+.routes__images img {
+  display: block;
+  margin: 5px 0;
+  border-radius: 10px;
+}
+.content {
+  display: inline-block;
+  padding: 10px;
+  position: absolute;
+}
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: orange;
+}
+</style>
