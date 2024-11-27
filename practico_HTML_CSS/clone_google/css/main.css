@@ -22,7 +22,7 @@ header nav {
 
 header nav .nav_right_section {
   width: 250px;
-  height: auto;
+  height: inherit;
   display: flex;
   list-style: none;
   justify-content: center;
@@ -32,4 +32,18 @@ header nav .nav_right_section {
 nav .nav_right_section a {
   margin-right: 10px;
   color: black;
+}
+
+nav .nav_right_section .menu-icon {
+  background-image: url("https://static.thenounproject.com/png/756729-200.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+}
+
+nav .nav_right_section img {
+  border-radius: 50%;
+  margin-left: 10px;
 }
