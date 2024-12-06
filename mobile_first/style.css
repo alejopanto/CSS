@@ -11,8 +11,8 @@
   --soft-orange: #ffe9d5;
   --seconday-blue: #1a9af7;
   --soft-blue: #e7f5ff;
-  --warm-black: #201e1c;
-  --black: #282623;
+  --warm-black: #282623;
+  --black: #201e1c;
   --grey: #bababa;
   --off-white: #faf8f7;
   --just-white: #fff;
@@ -226,7 +226,7 @@ main {
   min-width: 320px;
   height: auto;
   padding: 20px 10px;
-  background-color: var(--warm-black);
+  background-color: var(--black);
 }
 .product-detail--batata-logo {
   position: absolute;
@@ -254,6 +254,52 @@ main {
 }
 .product-detail--title p {
   margin-bottom: 20px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #808080;
+}
+
+.product-detail--card {
+  width: 90%;
+  min-width: 288px;
+  max-width: 400px;
+  height: 150px;
+  margin: 15px auto;  
+  padding: 15px;
+  background-color: var(--warm-black);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+.icon-card {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.clock {
+  background-image: url(./assests/icons/clock.svg);
+}
+.eye {
+  background-image: url(./assests/icons/eye.svg);
+}
+.dollar {
+  background-image: url(./assests/icons/dollar-sign.svg);
+}
+.check {
+  background-image: url(./assests/icons/check-circle.svg);
+}
+.product--card-title {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: var(--just-white);
+}
+.product--card-body {
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.8rem;
